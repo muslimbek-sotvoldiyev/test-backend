@@ -986,12 +986,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Express applicationni yaratish uchun qanday kod ishlatiladi?",
     "options": [
-      "A) const app = new Express()",
-      "B) const app = express()",
-      "C) const app = Express.create()",
-      "D) const app = createExpress()"
+      "A) const app = createExpress()",
+      "B) const app = new Express()",
+      "C) const app = express()",
+      "D) const app = Express.create()"
     ],
-    "correctAnswer": "B) const app = express()"
+    "correctAnswer": "C) const app = express()"
   },
   {
     "id": 2,
@@ -1025,12 +1025,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "GET so'rovini qabul qilish uchun qanday yoziladi?",
     "options": [
-      "A) app.get('/path', callback)",
-      "B) app.route('GET', '/path', callback)",
-      "C) app.request('/path', 'GET', callback)",
-      "D) app.handle('/path', callback)"
+      "A) app.handle('/path', callback)",
+      "B) app.get('/path', callback)",
+      "C) app.route('GET', '/path', callback)",
+      "D) app.request('/path', 'GET', callback)"
     ],
-    "correctAnswer": "A) app.get('/path', callback)"
+    "correctAnswer": "B) app.get('/path', callback)"
   },
   {
     "id": 5,
@@ -1038,12 +1038,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "POST so'rovini qabul qilish uchun qanday yoziladi?",
     "options": [
-      "A) app.send('/path', callback)",
-      "B) app.post('/path', callback)",
-      "C) app.create('/path', callback)",
-      "D) app.add('/path', callback)"
+      "A) app.post('/path', callback)",
+      "B) app.create('/path', callback)",
+      "C) app.add('/path', callback)",
+      "D) app.send('/path', callback)"
     ],
-    "correctAnswer": "B) app.post('/path', callback)"
+    "correctAnswer": "A) app.post('/path', callback)"
   },
   {
     "id": 6,
@@ -1051,12 +1051,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "URL parametrlarini olish uchun nima ishlatiladi?",
     "options": [
-      "A) req.params",
-      "B) req.query",
-      "C) req.body",
-      "D) req.parameters"
+      "A) req.parameters",
+      "B) req.params",
+      "C) req.query",
+      "D) req.body"
     ],
-    "correctAnswer": "A) req.params"
+    "correctAnswer": "B) req.params"
   },
   {
     "id": 7,
@@ -1064,12 +1064,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Request body ma'lumotlarini olish uchun nima ishlatiladi?",
     "options": [
-      "A) req.params",
-      "B) req.query",
-      "C) req.body",
-      "D) req.data"
+      "A) req.query",
+      "B) req.body",
+      "C) req.data",
+      "D) req.params"
     ],
-    "correctAnswer": "C) req.body"
+    "correctAnswer": "B) req.body"
   },
   {
     "id": 8,
@@ -1077,12 +1077,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Router'ni asosiy app'ga ulash uchun nima ishlatiladi?",
     "options": [
-      "A) app.connect('/path', router)",
-      "B) app.use('/path', router)",
-      "C) app.add('/path', router)",
-      "D) app.router('/path', router)"
+      "A) app.use('/path', router)",
+      "B) app.add('/path', router)",
+      "C) app.router('/path', router)",
+      "D) app.connect('/path', router)"
     ],
-    "correctAnswer": "B) app.use('/path', router)"
+    "correctAnswer": "A) app.use('/path', router)"
   },
   {
     "id": 9,
@@ -1090,12 +1090,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Middleware funksiyada keyingi middleware'ga o'tish uchun nima chaqiriladi?",
     "options": [
-      "A) continue()",
-      "B) next()",
-      "C) forward()",
-      "D) proceed()"
+      "A) next()",
+      "B) forward()",
+      "C) proceed()",
+      "D) continue()"
     ],
-    "correctAnswer": "B) next()"
+    "correctAnswer": "A) next()"
   },
   {
     "id": 10,
@@ -1103,12 +1103,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Middleware funksiya qanday parametrlarni qabul qiladi?",
     "options": [
-      "A) (req, res)",
-      "B) (req, res, next)",
-      "C) (request, response)",
-      "D) (data, callback)"
+      "A) (request, response)",
+      "B) (data, callback)",
+      "C) (req, res)",
+      "D) (req, res, next)"
     ],
-    "correctAnswer": "B) (req, res, next)"
+    "correctAnswer": "D) (req, res, next)"
   },
   {
     "id": 11,
@@ -1116,12 +1116,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "JSON javob qaytarish uchun qaysi method ishlatiladi?",
     "options": [
-      "A) res.send()",
-      "B) res.json()",
-      "C) res.write()",
-      "D) res.data()"
+      "A) res.data()",
+      "B) res.send()",
+      "C) res.json()",
+      "D) res.write()"
     ],
-    "correctAnswer": "B) res.json()"
+    "correctAnswer": "C) res.json()"
   },
   {
     "id": 12,
@@ -1129,12 +1129,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "HTTP status kodini belgilash uchun qaysi method ishlatiladi?",
     "options": [
-      "A) res.code()",
-      "B) res.statusCode()",
-      "C) res.status()",
-      "D) res.setStatus()"
+      "A) res.status()",
+      "B) res.setStatus()",
+      "C) res.code()",
+      "D) res.statusCode()"
     ],
-    "correctAnswer": "C) res.status()"
+    "correctAnswer": "A) res.status()"
   },
   {
     "id": 13,
@@ -1142,40 +1142,40 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "200 status kodi nimani bildiradi?",
     "options": [
-      "A) Bad Request",
-      "B) OK (muvaffaqiyatli)",
-      "C) Not Found",
-      "D) Internal Server Error"
+      "A) Internal Server Error",
+      "B) Bad Request",
+      "C) OK (muvaffaqiyatli)",
+      "D) Not Found"
     ],
-    "correctAnswer": "B) OK (muvaffaqiyatli)"
+    "correctAnswer": "C) OK (muvaffaqiyatli)"
   },
+
+  // PostgreSQL va pg package (15-33)
   {
     "id": 14,
     "category": "PostgreSQL pg package",
     "type": "closed",
     "question": "Node.js da PostgreSQL bilan ishlash uchun qaysi package ishlatiladi?",
     "options": [
-      "A) mysql",
-      "B) pg",
-      "C) mongodb",
-      "D) postgres"
+      "A) pg",
+      "B) mongodb",
+      "C) postgres",
+      "D) mysql"
     ],
-    "correctAnswer": "B) pg"
+    "correctAnswer": "A) pg"
   },
-
-  // PostgreSQL va pg package (15-33)
   {
     "id": 15,
     "category": "PostgreSQL pg package",
     "type": "closed",
     "question": "pg package'dan Pool yaratish uchun qanday yoziladi?",
     "options": [
-      "A) const pool = new pg.Pool(config)",
-      "B) const pool = Pool(config)",
-      "C) const pool = new Pool(config)",
-      "D) const pool = createPool(config)"
+      "A) const pool = Pool(config)",
+      "B) const pool = new Pool(config)",
+      "C) const pool = createPool(config)",
+      "D) const pool = new pg.Pool(config)"
     ],
-    "correctAnswer": "C) const pool = new Pool(config)"
+    "correctAnswer": "B) const pool = new Pool(config)"
   },
   {
     "id": 16,
@@ -1183,12 +1183,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Database'ga ulanish uchun qaysi method ishlatiladi?",
     "options": [
-      "A) pool.connect()",
-      "B) pool.open()",
-      "C) pool.start()",
-      "D) pool.init()"
+      "A) pool.init()",
+      "B) pool.connect()",
+      "C) pool.open()",
+      "D) pool.start()"
     ],
-    "correctAnswer": "A) pool.connect()"
+    "correctAnswer": "B) pool.connect()"
   },
   {
     "id": 17,
@@ -1196,12 +1196,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "SQL query bajarish uchun qaysi method ishlatiladi?",
     "options": [
-      "A) pool.execute()",
-      "B) pool.query()",
-      "C) pool.run()",
-      "D) pool.sql()"
+      "A) pool.run()",
+      "B) pool.sql()",
+      "C) pool.execute()",
+      "D) pool.query()"
     ],
-    "correctAnswer": "B) pool.query()"
+    "correctAnswer": "D) pool.query()"
   },
   {
     "id": 18,
@@ -1209,12 +1209,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Yangi jadval yaratish uchun qaysi SQL buyrug'i ishlatiladi?",
     "options": [
-      "A) MAKE TABLE",
-      "B) CREATE TABLE",
-      "C) NEW TABLE",
-      "D) INSERT TABLE"
+      "A) NEW TABLE",
+      "B) INSERT TABLE",
+      "C) MAKE TABLE",
+      "D) CREATE TABLE"
     ],
-    "correctAnswer": "B) CREATE TABLE"
+    "correctAnswer": "D) CREATE TABLE"
   },
   {
     "id": 19,
@@ -1222,12 +1222,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Barcha ma'lumotlarni tanlash uchun qaysi SQL buyrug'i ishlatiladi?",
     "options": [
-      "A) GET * FROM table",
-      "B) FETCH * FROM table",
-      "C) SELECT * FROM table",
-      "D) RETRIEVE * FROM table"
+      "A) SELECT * FROM table",
+      "B) RETRIEVE * FROM table",
+      "C) GET * FROM table",
+      "D) FETCH * FROM table"
     ],
-    "correctAnswer": "C) SELECT * FROM table"
+    "correctAnswer": "A) SELECT * FROM table"
   },
   {
     "id": 20,
@@ -1248,12 +1248,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Ma'lumotni yangilash uchun qaysi SQL buyrug'i ishlatiladi?",
     "options": [
-      "A) CHANGE",
-      "B) MODIFY",
-      "C) UPDATE",
-      "D) EDIT"
+      "A) EDIT",
+      "B) CHANGE",
+      "C) MODIFY",
+      "D) UPDATE"
     ],
-    "correctAnswer": "C) UPDATE"
+    "correctAnswer": "D) UPDATE"
   },
   {
     "id": 22,
@@ -1261,12 +1261,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Ma'lumotni o'chirish uchun qaysi SQL buyrug'i ishlatiladi?",
     "options": [
-      "A) REMOVE",
-      "B) DELETE",
-      "C) DROP",
-      "D) CLEAR"
+      "A) CLEAR",
+      "B) REMOVE",
+      "C) DELETE",
+      "D) DROP"
     ],
-    "correctAnswer": "B) DELETE"
+    "correctAnswer": "C) DELETE"
   },
   {
     "id": 23,
@@ -1274,12 +1274,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Ma'lumotlarni filtr qilish uchun qaysi kalit so'z ishlatiladi?",
     "options": [
-      "A) FILTER",
-      "B) WHERE",
-      "C) IF",
-      "D) CONDITION"
+      "A) IF",
+      "B) CONDITION",
+      "C) FILTER",
+      "D) WHERE"
     ],
-    "correctAnswer": "B) WHERE"
+    "correctAnswer": "D) WHERE"
   },
   {
     "id": 24,
@@ -1300,12 +1300,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "PostgreSQL'da butun son uchun qaysi data type ishlatiladi?",
     "options": [
-      "A) NUMBER",
-      "B) INT",
-      "C) DIGIT",
-      "D) NUMERIC"
+      "A) DIGIT",
+      "B) NUMERIC",
+      "C) NUMBER",
+      "D) INT"
     ],
-    "correctAnswer": "B) INT"
+    "correctAnswer": "D) INT"
   },
   {
     "id": 26,
@@ -1313,12 +1313,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "PostgreSQL'da matn saqlash uchun qaysi data type ishlatiladi?",
     "options": [
-      "A) TEXT yoki VARCHAR",
-      "B) STRING",
-      "C) CHAR faqat",
-      "D) MEMO"
+      "A) MEMO",
+      "B) TEXT yoki VARCHAR",
+      "C) STRING",
+      "D) CHAR faqat"
     ],
-    "correctAnswer": "A) TEXT yoki VARCHAR"
+    "correctAnswer": "B) TEXT yoki VARCHAR"
   },
   {
     "id": 27,
@@ -1326,12 +1326,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "SERIAL PRIMARY KEY nima qiladi?",
     "options": [
-      "A) Faqat birlamchi kalit yaratadi",
-      "B) Auto-increment butun son bilan birlamchi kalit yaratadi",
-      "C) Tasodifiy ID yaratadi",
-      "D) String ID yaratadi"
+      "A) Auto-increment butun son bilan birlamchi kalit yaratadi",
+      "B) Tasodifiy ID yaratadi",
+      "C) String ID yaratadi",
+      "D) Faqat birlamchi kalit yaratadi"
     ],
-    "correctAnswer": "B) Auto-increment butun son bilan birlamchi kalit yaratadi"
+    "correctAnswer": "A) Auto-increment butun son bilan birlamchi kalit yaratadi"
   },
   {
     "id": 28,
@@ -1339,12 +1339,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "INSERT, UPDATE yoki DELETE'dan keyin yaratilgan/o'zgartirilgan qatorni qaytarish uchun nima ishlatiladi?",
     "options": [
-      "A) OUTPUT *",
-      "B) RETURN *",
-      "C) RETURNING *",
-      "D) RESULT *"
+      "A) RESULT *",
+      "B) OUTPUT *",
+      "C) RETURN *",
+      "D) RETURNING *"
     ],
-    "correctAnswer": "C) RETURNING *"
+    "correctAnswer": "D) RETURNING *"
   },
   {
     "id": 29,
@@ -1352,12 +1352,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Query natijasida nechta qator qaytganini bilish uchun nima ishlatiladi?",
     "options": [
-      "A) result.count",
-      "B) result.length",
-      "C) result.rowCount",
-      "D) result.size"
+      "A) result.rowCount",
+      "B) result.size",
+      "C) result.count",
+      "D) result.length"
     ],
-    "correctAnswer": "C) result.rowCount"
+    "correctAnswer": "A) result.rowCount"
   },
   {
     "id": 30,
@@ -1365,12 +1365,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "IF NOT EXISTS nimani bildiradi?",
     "options": [
-      "A) Jadval bor bo'lsa xato beradi",
-      "B) Jadval yo'q bo'lsa gina yaratadi",
-      "C) Jadvalni har doim qayta yaratadi",
-      "D) Jadvalni o'chiradi"
+      "A) Jadvalni o'chiradi",
+      "B) Jadval bor bo'lsa xato beradi",
+      "C) Jadval yo'q bo'lsa gina yaratadi",
+      "D) Jadvalni har doim qayta yaratadi"
     ],
-    "correctAnswer": "B) Jadval yo'q bo'lsa gina yaratadi"
+    "correctAnswer": "C) Jadval yo'q bo'lsa gina yaratadi"
   },
   {
     "id": 31,
@@ -1378,12 +1378,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "pool.query() natijasidan ma'lumotlarni olish uchun nima ishlatiladi?",
     "options": [
-      "A) result.data",
-      "B) result.rows",
-      "C) result.values",
-      "D) result.records"
+      "A) result.values",
+      "B) result.records",
+      "C) result.data",
+      "D) result.rows"
     ],
-    "correctAnswer": "B) result.rows"
+    "correctAnswer": "D) result.rows"
   },
   {
     "id": 32,
@@ -1391,12 +1391,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "SQL'da tenglik operatori qaysi?",
     "options": [
-      "A) ==",
-      "B) =",
-      "C) ===",
-      "D) EQUALS"
+      "A) EQUALS",
+      "B) ==",
+      "C) =",
+      "D) ==="
     ],
-    "correctAnswer": "B) ="
+    "correctAnswer": "C) ="
   },
   {
     "id": 33,
@@ -1404,12 +1404,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Connection pool nima?",
     "options": [
-      "A) Bitta database connection",
-      "B) Database connection'larning to'plami (reuse uchun)",
-      "C) Fayllar to'plami",
-      "D) User'lar to'plami"
+      "A) User'lar to'plami",
+      "B) Bitta database connection",
+      "C) Database connection'larning to'plami (reuse uchun)",
+      "D) Fayllar to'plami"
     ],
-    "correctAnswer": "B) Database connection'larning to'plami (reuse uchun)"
+    "correctAnswer": "C) Database connection'larning to'plami (reuse uchun)"
   },
 
   // JWT (34-46)
@@ -1432,12 +1432,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "JWT asosan nima uchun ishlatiladi?",
     "options": [
-      "A) Ma'lumotlarni saqlash",
-      "B) Authentication va authorization",
-      "C) Matnni shifrlash",
-      "D) Database yaratish"
+      "A) Authentication va authorization",
+      "B) Matnni shifrlash",
+      "C) Database yaratish",
+      "D) Ma'lumotlarni saqlash"
     ],
-    "correctAnswer": "B) Authentication va authorization"
+    "correctAnswer": "A) Authentication va authorization"
   },
   {
     "id": 36,
@@ -1445,12 +1445,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Node.js da JWT bilan ishlash uchun qaysi package ishlatiladi?",
     "options": [
-      "A) jwt",
-      "B) jsonwebtoken",
-      "C) web-token",
-      "D) token-jwt"
+      "A) token-jwt",
+      "B) jwt",
+      "C) jsonwebtoken",
+      "D) web-token"
     ],
-    "correctAnswer": "B) jsonwebtoken"
+    "correctAnswer": "C) jsonwebtoken"
   },
   {
     "id": 37,
@@ -1458,12 +1458,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "JWT token yaratish uchun qaysi method ishlatiladi?",
     "options": [
-      "A) jwt.create()",
-      "B) jwt.generate()",
-      "C) jwt.sign()",
-      "D) jwt.encode()"
+      "A) jwt.encode()",
+      "B) jwt.create()",
+      "C) jwt.generate()",
+      "D) jwt.sign()"
     ],
-    "correctAnswer": "C) jwt.sign()"
+    "correctAnswer": "D) jwt.sign()"
   },
   {
     "id": 38,
@@ -1471,12 +1471,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "jwt.sign() qaysi parametrlarni qabul qiladi?",
     "options": [
-      "A) (payload, secret)",
-      "B) (payload, secret, options)",
-      "C) (data, password)",
-      "D) A va B to'g'ri"
+      "A) A va B to'g'ri",
+      "B) (payload, secret)",
+      "C) (payload, secret, options)",
+      "D) (data, password)"
     ],
-    "correctAnswer": "D) A va B to'g'ri"
+    "correctAnswer": "A) A va B to'g'ri"
   },
   {
     "id": 39,
@@ -1497,12 +1497,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Token'ning amal qilish muddatini belgilash uchun qaysi option ishlatiladi?",
     "options": [
-      "A) expiration",
-      "B) expiresIn",
-      "C) validUntil",
-      "D) duration"
+      "A) duration",
+      "B) expiration",
+      "C) expiresIn",
+      "D) validUntil"
     ],
-    "correctAnswer": "B) expiresIn"
+    "correctAnswer": "C) expiresIn"
   },
   {
     "id": 41,
@@ -1510,12 +1510,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "expiresIn: '1h' nimani bildiradi?",
     "options": [
-      "A) 1 kun",
-      "B) 1 soat",
-      "C) 1 daqiqa",
-      "D) 1 hafta"
+      "A) 1 soat",
+      "B) 1 daqiqa",
+      "C) 1 hafta",
+      "D) 1 kun"
     ],
-    "correctAnswer": "B) 1 soat"
+    "correctAnswer": "A) 1 soat"
   },
   {
     "id": 42,
@@ -1536,12 +1536,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "JWT tokenning qismlari qanday ajratiladi?",
     "options": [
-      "A) Vergul bilan",
-      "B) Nuqta bilan",
-      "C) Tire bilan",
-      "D) Slash bilan"
+      "A) Nuqta bilan",
+      "B) Tire bilan",
+      "C) Slash bilan",
+      "D) Vergul bilan"
     ],
-    "correctAnswer": "B) Nuqta bilan"
+    "correctAnswer": "A) Nuqta bilan"
   },
   {
     "id": 44,
@@ -1549,12 +1549,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Token odatda qaysi header'da yuboriladi?",
     "options": [
-      "A) Authentication",
-      "B) Authorization",
-      "C) Token",
-      "D) Access-Token"
+      "A) Token",
+      "B) Access-Token",
+      "C) Authentication",
+      "D) Authorization"
     ],
-    "correctAnswer": "B) Authorization"
+    "correctAnswer": "D) Authorization"
   },
   {
     "id": 45,
@@ -1562,12 +1562,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Authorization header'da token qanday formatda yuboriladi?",
     "options": [
-      "A) Token <token>",
-      "B) Bearer <token>",
-      "C) JWT <token>",
-      "D) Auth <token>"
+      "A) Bearer ",
+      "B) JWT ",
+      "C) Auth ",
+      "D) Token "
     ],
-    "correctAnswer": "B) Bearer <token>"
+    "correctAnswer": "A) Bearer "
   },
   {
     "id": 46,
@@ -1575,15 +1575,15 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "JWT secret key nimani bildiradi?",
     "options": [
-      "A) Foydalanuvchi paroli",
-      "B) Token'ni imzolash va tekshirish uchun maxfiy kalit",
-      "C) Database paroli",
-      "D) API URL"
+      "A) API URL",
+      "B) Foydalanuvchi paroli",
+      "C) Token'ni imzolash va tekshirish uchun maxfiy kalit",
+      "D) Database paroli"
     ],
-    "correctAnswer": "B) Token'ni imzolash va tekshirish uchun maxfiy kalit"
+    "correctAnswer": "C) Token'ni imzolash va tekshirish uchun maxfiy kalit"
   },
 
-  // bcryptjs (47-54)
+  // bcryptjs (47-57)
   {
     "id": 47,
     "category": "bcrypt asoslari",
@@ -1603,12 +1603,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Parolni hash qilish uchun qaysi method ishlatiladi?",
     "options": [
-      "A) bcrypt.encrypt()",
-      "B) bcrypt.hash()",
-      "C) bcrypt.encode()",
-      "D) bcrypt.secure()"
+      "A) bcrypt.encode()",
+      "B) bcrypt.secure()",
+      "C) bcrypt.encrypt()",
+      "D) bcrypt.hash()"
     ],
-    "correctAnswer": "B) bcrypt.hash()"
+    "correctAnswer": "D) bcrypt.hash()"
   },
   {
     "id": 49,
@@ -1616,12 +1616,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "bcrypt.hash() qaysi parametrlarni qabul qiladi?",
     "options": [
-      "A) (password)",
-      "B) (password, saltRounds)",
-      "C) (password, secret)",
-      "D) (password, algorithm)"
+      "A) (password, saltRounds)",
+      "B) (password, secret)",
+      "C) (password, algorithm)",
+      "D) (password)"
     ],
-    "correctAnswer": "B) (password, saltRounds)"
+    "correctAnswer": "A) (password, saltRounds)"
   },
   {
     "id": 50,
@@ -1629,12 +1629,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Salt rounds nima?",
     "options": [
-      "A) Hash uzunligi",
-      "B) Hash qilish qiyinlik darajasi",
-      "C) Parol uzunligi",
-      "D) Xavfsizlik turi"
+      "A) Hash qilish qiyinlik darajasi",
+      "B) Parol uzunligi",
+      "C) Xavfsizlik turi",
+      "D) Hash uzunligi"
     ],
-    "correctAnswer": "B) Hash qilish qiyinlik darajasi"
+    "correctAnswer": "A) Hash qilish qiyinlik darajasi"
   },
   {
     "id": 51,
@@ -1642,12 +1642,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Tavsiya etilgan salt rounds qiymati qancha?",
     "options": [
-      "A) 5",
-      "B) 10",
-      "C) 15",
-      "D) 20"
+      "A) 20",
+      "B) 5",
+      "C) 10",
+      "D) 15"
     ],
-    "correctAnswer": "B) 10"
+    "correctAnswer": "C) 10"
   },
   {
     "id": 52,
@@ -1668,12 +1668,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "bcrypt.compare() qaysi parametrlarni qabul qiladi?",
     "options": [
-      "A) (password, hash)",
-      "B) (hash, password)",
-      "C) (password, saltRounds)",
-      "D) (password, secret)"
+      "A) (password, saltRounds)",
+      "B) (password, secret)",
+      "C) (password, hash)",
+      "D) (hash, password)"
     ],
-    "correctAnswer": "A) (password, hash)"
+    "correctAnswer": "C) (password, hash)"
   },
   {
     "id": 54,
@@ -1681,12 +1681,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "bcrypt.compare() nima qaytaradi?",
     "options": [
-      "A) String",
-      "B) Number",
-      "C) Boolean (true/false)",
-      "D) Object"
+      "A) Object",
+      "B) String",
+      "C) Number",
+      "D) Boolean (true/false)"
     ],
-    "correctAnswer": "C) Boolean (true/false)"
+    "correctAnswer": "D) Boolean (true/false)"
   },
   {
     "id": 55,
@@ -1694,12 +1694,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Nima uchun parollarni database'da oddiy matn sifatida saqlamaslik kerak?",
     "options": [
-      "A) Joyni ko'p egallaydi",
-      "B) Xavfsiz emas, ma'lumotlar buzilsa parollar oshkor bo'ladi",
-      "C) Sekin ishlaydi",
-      "D) Kod murakkablashadi"
+      "A) Sekin ishlaydi",
+      "B) Kod murakkablashadi",
+      "C) Joyni ko'p egallaydi",
+      "D) Xavfsiz emas, ma'lumotlar buzilsa parollar oshkor bo'ladi"
     ],
-    "correctAnswer": "B) Xavfsiz emas, ma'lumotlar buzilsa parollar oshkor bo'ladi"
+    "correctAnswer": "D) Xavfsiz emas, ma'lumotlar buzilsa parollar oshkor bo'ladi"
   },
   {
     "id": 56,
@@ -1707,12 +1707,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Foydalanuvchi ro'yxatdan o'tganda parol bilan nima qilish kerak?",
     "options": [
-      "A) To'g'ridan-to'g'ri database'ga saqlash",
-      "B) Hash qilib, keyin database'ga saqlash",
-      "C) Encrypt qilib saqlash",
-      "D) Base64'ga o'tkazish"
+      "A) Hash qilib, keyin database'ga saqlash",
+      "B) Encrypt qilib saqlash",
+      "C) Base64'ga o'tkazish",
+      "D) To'g'ridan-to'g'ri database'ga saqlash"
     ],
-    "correctAnswer": "B) Hash qilib, keyin database'ga saqlash"
+    "correctAnswer": "A) Hash qilib, keyin database'ga saqlash"
   },
   {
     "id": 57,
@@ -1720,27 +1720,27 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Foydalanuvchi login qilganda parol bilan nima qilish kerak?",
     "options": [
-      "A) Database'dagi hash bilan to'g'ridan-to'g'ri solishtirish",
-      "B) bcrypt.compare() bilan solishtirish",
-      "C) Yana hash qilib solishtirish",
-      "D) Decrypt qilib solishtirish"
+      "A) Yana hash qilib solishtirish",
+      "B) Decrypt qilib solishtirish",
+      "C) Database'dagi hash bilan to'g'ridan-to'g'ri solishtirish",
+      "D) bcrypt.compare() bilan solishtirish"
     ],
-    "correctAnswer": "B) bcrypt.compare() bilan solishtirish"
+    "correctAnswer": "D) bcrypt.compare() bilan solishtirish"
   },
 
-  // dotenv (58-63)
+  // dotenv (58-65)
   {
     "id": 58,
     "category": "dotenv asoslari",
     "type": "closed",
     "question": "dotenv nima uchun ishlatiladi?",
     "options": [
-      "A) Database bilan ishlash",
-      "B) env variables'ni yuklash",
-      "C) Parollarni shifrlash",
-      "D) Fayllarni o'qish"
+      "A) Parollarni shifrlash",
+      "B) Fayllarni o'qish",
+      "C) Database bilan ishlash",
+      "D) env variables'ni yuklash"
     ],
-    "correctAnswer": "B) env variables'ni yuklash"
+    "correctAnswer": "D) env variables'ni yuklash"
   },
   {
     "id": 59,
@@ -1748,12 +1748,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "dotenv qaysi fayldan environment variables'ni o'qiydi?",
     "options": [
-      "A) config.txt",
-      "B) .env",
-      "C) environment.js",
-      "D) settings.json"
+      "A) settings.json",
+      "B) config.txt",
+      "C) .env",
+      "D) environment.js"
     ],
-    "correctAnswer": "B) .env"
+    "correctAnswer": "C) .env"
   },
   {
     "id": 60,
@@ -1774,12 +1774,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": ".env faylidan o'zgaruvchini olish uchun nima ishlatiladi?",
     "options": [
-      "A) dotenv.get('KEY')",
-      "B) process.env.KEY",
-      "C) env.KEY",
-      "D) config.KEY"
+      "A) env.KEY",
+      "B) config.KEY",
+      "C) dotenv.get('KEY')",
+      "D) process.env.KEY"
     ],
-    "correctAnswer": "B) process.env.KEY"
+    "correctAnswer": "D) process.env.KEY"
   },
   {
     "id": 62,
@@ -1787,12 +1787,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": ".env faylida o'zgaruvchi qanday yoziladi?",
     "options": [
-      "A) KEY=VALUE",
-      "B) KEY: VALUE",
-      "C) const KEY = 'VALUE'",
-      "D) set KEY=VALUE"
+      "A) set KEY=VALUE",
+      "B) KEY=VALUE",
+      "C) KEY: VALUE",
+      "D) const KEY = 'VALUE'"
     ],
-    "correctAnswer": "A) KEY=VALUE"
+    "correctAnswer": "B) KEY=VALUE"
   },
   {
     "id": 63,
@@ -1800,12 +1800,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": ".env faylida qiymat qo'shtirnoqlar ichida bo'lishi shartmi?",
     "options": [
-      "A) Ha, har doim",
-      "B) Yo'q",
-      "C) Faqat matn uchun",
-      "D) Faqat raqamlar uchun"
+      "A) Faqat matn uchun",
+      "B) Faqat raqamlar uchun",
+      "C) Ha, har doim",
+      "D) Yo'q"
     ],
-    "correctAnswer": "B) Yo'q"
+    "correctAnswer": "D) Yo'q"
   },
   {
     "id": 64,
@@ -1813,12 +1813,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": ".env faylida qanday ma'lumotlar saqlanadi?",
     "options": [
-      "A) Faqat database parollari",
-      "B) Database ma'lumotlari, API kalitlar, secret keys",
-      "C) Foydalanuvchi ma'lumotlari",
-      "D) HTML kodlar"
+      "A) HTML kodlar",
+      "B) Faqat database parollari",
+      "C) Database ma'lumotlari, API kalitlar, secret keys",
+      "D) Foydalanuvchi ma'lumotlari"
     ],
-    "correctAnswer": "B) Database ma'lumotlari, API kalitlar, secret keys"
+    "correctAnswer": "C) Database ma'lumotlari, API kalitlar, secret keys"
   },
   {
     "id": 65,
@@ -1841,12 +1841,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "nodemon nima?",
     "options": [
-      "A) Node.js runtime",
-      "B) Fayl o'zgarganda serverni avtomatik qayta ishga tushiruvchi tool",
-      "C) Database tool",
-      "D) Testing framework"
+      "A) Database tool",
+      "B) Testing framework",
+      "C) Node.js runtime",
+      "D) Fayl o'zgarganda serverni avtomatik qayta ishga tushiruvchi tool"
     ],
-    "correctAnswer": "B) Fayl o'zgarganda serverni avtomatik qayta ishga tushiruvchi tool"
+    "correctAnswer": "D) Fayl o'zgarganda serverni avtomatik qayta ishga tushiruvchi tool"
   },
   {
     "id": 67,
@@ -1867,12 +1867,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "nodemon'ning asosiy afzalligi nima?",
     "options": [
-      "A) Tezroq ishlaydi",
-      "B) Kod o'zgarganda qo'lda restart qilish shart emas",
-      "C) Kamroq xotira ishlatadi",
-      "D) Xatoliklarni topadi"
+      "A) Kamroq xotira ishlatadi",
+      "B) Xatoliklarni topadi",
+      "C) Tezroq ishlaydi",
+      "D) Kod o'zgarganda qo'lda restart qilish shart emas"
     ],
-    "correctAnswer": "B) Kod o'zgarganda qo'lda restart qilish shart emas"
+    "correctAnswer": "D) Kod o'zgarganda qo'lda restart qilish shart emas"
   },
   {
     "id": 69,
@@ -1880,12 +1880,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "nodemon va node o'rtasidagi asosiy farq nima?",
     "options": [
-      "A) nodemon avtomatik restart qiladi",
-      "B) node tezroq",
-      "C) nodemon production uchun",
-      "D) Farqi yo'q"
+      "A) node tezroq",
+      "B) nodemon production uchun",
+      "C) Farqi yo'q",
+      "D) nodemon avtomatik restart qiladi"
     ],
-    "correctAnswer": "A) nodemon avtomatik restart qiladi"
+    "correctAnswer": "D) nodemon avtomatik restart qiladi"
   },
 
   // Authentication & Authorization (70-79)
@@ -1908,12 +1908,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Guard nima uchun ishlatiladi?",
     "options": [
-      "A) Ma'lumotlarni saqlash",
-      "B) Route'larni himoya qilish, faqat ruxsatli foydalanuvchilar kirishi uchun",
-      "C) Database'ga ulanish",
-      "D) HTML yaratish"
+      "A) Route'larni himoya qilish, faqat ruxsatli foydalanuvchilar kirishi uchun",
+      "B) Database'ga ulanish",
+      "C) HTML yaratish",
+      "D) Ma'lumotlarni saqlash"
     ],
-    "correctAnswer": "B) Route'larni himoya qilish, faqat ruxsatli foydalanuvchilar kirishi uchun"
+    "correctAnswer": "A) Route'larni himoya qilish, faqat ruxsatli foydalanuvchilar kirishi uchun"
   },
   {
     "id": 72,
@@ -1934,12 +1934,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Token tekshirilgandan keyin user ma'lumotlari qayerga qo'shiladi?",
     "options": [
-      "A) res.user",
-      "B) req.user",
-      "C) user.data",
-      "D) session.user"
+      "A) session.user",
+      "B) res.user",
+      "C) req.user",
+      "D) user.data"
     ],
-    "correctAnswer": "B) req.user"
+    "correctAnswer": "C) req.user"
   },
   {
     "id": 74,
@@ -1960,12 +1960,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "403 status kodi nimani bildiradi?",
     "options": [
-      "A) OK",
-      "B) Unauthorized",
-      "C) Forbidden (ruxsat yo'q)",
-      "D) Not Found"
+      "A) Unauthorized",
+      "B) Forbidden (ruxsat yo'q)",
+      "C) Not Found",
+      "D) OK"
     ],
-    "correctAnswer": "C) Forbidden (ruxsat yo'q)"
+    "correctAnswer": "B) Forbidden (ruxsat yo'q)"
   },
   {
     "id": 76,
@@ -1973,12 +1973,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "404 status kodi nimani bildiradi?",
     "options": [
-      "A) OK",
-      "B) Unauthorized",
-      "C) Forbidden",
-      "D) Not Found (topilmadi)"
+      "A) Unauthorized",
+      "B) Forbidden",
+      "C) Not Found (topilmadi)",
+      "D) OK"
     ],
-    "correctAnswer": "D) Not Found (topilmadi)"
+    "correctAnswer": "C) Not Found (topilmadi)"
   },
   {
     "id": 77,
@@ -1999,12 +1999,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "400 status kodi nimani bildiradi?",
     "options": [
-      "A) OK",
-      "B) Bad Request (noto'g'ri so'rov)",
-      "C) Unauthorized",
-      "D) Not Found"
+      "A) Bad Request (noto'g'ri so'rov)",
+      "B) Unauthorized",
+      "C) Not Found",
+      "D) OK"
     ],
-    "correctAnswer": "B) Bad Request (noto'g'ri so'rov)"
+    "correctAnswer": "A) Bad Request (noto'g'ri so'rov)"
   },
   {
     "id": 79,
@@ -2012,13 +2012,15 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "201 status kodi nimani bildiradi?",
     "options": [
-      "A) OK",
-      "B) Created (yaratildi)",
-      "C) Accepted",
-      "D) No Content"
+      "A) No Content",
+      "B) OK",
+      "C) Created (yaratildi)",
+      "D) Accepted"
     ],
-    "correctAnswer": "B) Created (yaratildi)"
+    "correctAnswer": "C) Created (yaratildi)"
   },
+
+  // Code structure & best practices (82-90)
   {
     "id": 80,
     "category": "Password validation",
@@ -2045,20 +2047,18 @@ export const pythonQuestions = [
     ],
     "correctAnswer": "B) 400 Bad Request"
   },
-
-  // Code structure & best practices (82-90)
   {
     "id": 82,
     "category": "MVC pattern",
     "type": "closed",
     "question": "Controller nima qiladi?",
     "options": [
-      "A) Database bilan ishlaydi",
-      "B) Request'larni qabul qilib, service'larni chaqiradi",
-      "C) HTML yasaydi",
-      "D) Fayllarni saqlaydi"
+      "A) Fayllarni saqlaydi",
+      "B) Database bilan ishlaydi",
+      "C) Request'larni qabul qilib, service'larni chaqiradi",
+      "D) HTML yasaydi"
     ],
-    "correctAnswer": "B) Request'larni qabul qilib, service'larni chaqiradi"
+    "correctAnswer": "C) Request'larni qabul qilib, service'larni chaqiradi"
   },
   {
     "id": 83,
@@ -2066,12 +2066,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "try-catch nima uchun ishlatiladi?",
     "options": [
-      "A) Kodni tezlashtirish",
-      "B) Xatoliklarni ushlash va boshqarish",
-      "C) Ma'lumotlarni tekshirish",
-      "D) Loop yaratish"
+      "A) Ma'lumotlarni tekshirish",
+      "B) Loop yaratish",
+      "C) Kodni tezlashtirish",
+      "D) Xatoliklarni ushlash va boshqarish"
     ],
-    "correctAnswer": "B) Xatoliklarni ushlash va boshqarish"
+    "correctAnswer": "D) Xatoliklarni ushlash va boshqarish"
   },
   {
     "id": 84,
@@ -2092,12 +2092,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "await kalit so'zi qayerda ishlatilishi mumkin?",
     "options": [
-      "A) Har qanday funksiyada",
-      "B) Faqat async funksiya ichida",
-      "C) Faqat global scope'da",
-      "D) Faqat class'larda"
+      "A) Faqat class'larda",
+      "B) Har qanday funksiyada",
+      "C) Faqat async funksiya ichida",
+      "D) Faqat global scope'da"
     ],
-    "correctAnswer": "B) Faqat async funksiya ichida"
+    "correctAnswer": "C) Faqat async funksiya ichida"
   },
   {
     "id": 86,
@@ -2118,12 +2118,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "Default export qilish qanday amalga oshiriladi?",
     "options": [
-      "A) module.exports = ...",
-      "B) export default ...",
-      "C) exports.default = ...",
-      "D) return default ..."
+      "A) export default ...",
+      "B) exports.default = ...",
+      "C) return default ...",
+      "D) module.exports = ..."
     ],
-    "correctAnswer": "B) export default ..."
+    "correctAnswer": "A) export default ..."
   },
   {
     "id": 88,
@@ -2131,12 +2131,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "API'da PUT method odatda nima uchun ishlatiladi?",
     "options": [
-      "A) Ma'lumot olish",
-      "B) Yangi ma'lumot yaratish",
-      "C) Ma'lumotni yangilash",
-      "D) Ma'lumotni o'chirish"
+      "A) Ma'lumotni yangilash",
+      "B) Ma'lumotni o'chirish",
+      "C) Ma'lumot olish",
+      "D) Yangi ma'lumot yaratish"
     ],
-    "correctAnswer": "C) Ma'lumotni yangilash"
+    "correctAnswer": "A) Ma'lumotni yangilash"
   },
   {
     "id": 89,
@@ -2144,12 +2144,12 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "API'da DELETE method nima uchun ishlatiladi?",
     "options": [
-      "A) Ma'lumot olish",
-      "B) Yangi ma'lumot yaratish",
-      "C) Ma'lumotni yangilash",
-      "D) Ma'lumotni o'chirish"
+      "A) Ma'lumotni o'chirish",
+      "B) Ma'lumot olish",
+      "C) Yangi ma'lumot yaratish",
+      "D) Ma'lumotni yangilash"
     ],
-    "correctAnswer": "D) Ma'lumotni o'chirish"
+    "correctAnswer": "A) Ma'lumotni o'chirish"
   },
   {
     "id": 90,
@@ -2157,11 +2157,11 @@ export const pythonQuestions = [
     "type": "closed",
     "question": "API'da GET method nima uchun ishlatiladi?",
     "options": [
-      "A) Ma'lumot olish",
-      "B) Yangi ma'lumot yaratish",
-      "C) Ma'lumotni yangilash",
-      "D) Ma'lumotni o'chirish"
+      "A) Yangi ma'lumot yaratish",
+      "B) Ma'lumotni yangilash",
+      "C) Ma'lumotni o'chirish",
+      "D) Ma'lumot olish"
     ],
-    "correctAnswer": "A) Ma'lumot olish"
+    "correctAnswer": "D) Ma'lumot olish"
   }
 ];
